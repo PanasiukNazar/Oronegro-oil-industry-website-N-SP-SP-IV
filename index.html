@@ -1390,8 +1390,8 @@
                                 </p>
 
                                 <form
-                                    action="forms/contact.php"
-                                    method="post"
+                                    action="thanks.html"
+                                    method="get"
                                     class="php-email-form"
                                     data-aos="fade-up"
                                     data-aos-delay="200"
@@ -1403,7 +1403,7 @@
                                                 name="name"
                                                 class="form-control"
                                                 placeholder="Tu Nombre"
-                                                required=""
+                                                required
                                             />
                                         </div>
 
@@ -1414,15 +1414,18 @@
                                                 name="email"
                                                 id="email"
                                                 placeholder="Tu Correo Electrónico"
-                                                required=""
+                                                required
                                             />
-                                            <div
-                                                id="result"
-                                                style="
-                                                    color: red;
-                                                    font-size: 12px;
-                                                "
-                                            ></div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input
+                                                type="number"
+                                                class="form-control"
+                                                id="subject"
+                                                placeholder="Número"
+                                                required
+                                            />
                                         </div>
 
                                         <div class="col-12">
@@ -1431,7 +1434,7 @@
                                                 class="form-control"
                                                 name="subject"
                                                 placeholder="Asunto"
-                                                required=""
+                                                required
                                             />
                                         </div>
 
@@ -1441,23 +1444,15 @@
                                                 name="message"
                                                 rows="6"
                                                 placeholder="Mensaje"
-                                                required=""
+                                                required
                                             ></textarea>
                                         </div>
 
                                         <div class="col-12 text-center">
-                                            <div class="loading">Cargando</div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">
-                                                Tu mensaje ha sido enviado.
-                                                ¡Gracias!
-                                            </div>
-
                                             <button
                                                 type="submit"
                                                 class="btn"
                                                 id="submit"
-                                                onclick="sendForm()"
                                             >
                                                 Enviar Mensaje
                                             </button>
@@ -1564,7 +1559,6 @@
 
         <!-- Vendor JS Files -->
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
         <script src="assets/vendor/aos/aos.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
@@ -1572,7 +1566,6 @@
 
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/contact-form.js"></script>
         <script src="assets/js/cookiebanner.js"></script>
     </body>
 </html>
